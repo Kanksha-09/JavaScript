@@ -29,3 +29,32 @@ age: 20
 
 console.log(typeof myObj); // => object
 console.log(typeof outsideTemp); // => object as null will return object
+
+// ********************************
+
+// Stack => (Primitive)  ,   Heap => (NOn-Primitive)
+
+let myName = "Knaksha Pharate"
+
+let anotherName = myName
+anotherName = "xyzabc"
+
+console.log(myName); //=> Kanksha Pharate
+console.log(anotherName); //=> xyzabc
+
+// The reason is because we are making the changes in the primitive datatype variables which uses stack
+
+let userOne = {
+    email : "UserOne@gmail.com",
+    upi : "userOne@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "userTwo@gmail.com";
+
+console.log(userOne); // => here the email will change to userTwo@gmail.com
+
+console.log(userTwo); // => here too the email will be userTwo@gmail.com
+
+// Here the reason is because we use Non Primitive datatypes which uses heap
