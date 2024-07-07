@@ -1,9 +1,9 @@
-// Primitive and reference type
+// Primitive Type
 
 // 7 types: they are all call by value:
 // String, NUmber, Boolean, null, undefined, Symbol, BigInt
 
-// Reference type (Non primitive)
+// Reference Type (Non primitive)
 //Array, objects, Functions
 
 const score = 190;
