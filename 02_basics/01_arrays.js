@@ -33,7 +33,7 @@ const myn1 = myArr2.slice(1,3); // excludes last index
 console.log(myn1); // => [2,3] excludes the last index while slicing so numbers at index 1 and 2 are returned
 
 console.log("B ", myArr2);
-const myn2 = myArr2.splice(1,3); // includes last index but it also removes the sliced part out of the Array hence array is manipulated
+const myn2 = myArr2.splice(1,3); // includes last index but it also removes the sliced part out of the original Array hence array is manipulated
 
 console.log("C ", myArr2);
 console.log(myn2); // => [2,3,4] includes the last index so numbers at index 1,2 and 3 are returned 
