@@ -57,3 +57,16 @@ function handleObj(anyobj){
 }
 
 handleObj(user)
+handleObj({
+    username:"sam",
+    price:789
+})
+
+const myarr = [200,400,600,800]
+function returnSecVal(getarr){
+    return getarr[1];
+}
+
+console.log(returnSecVal(myarr));
+
+// console.log(returnSecVal( [200,400,600,800]));
